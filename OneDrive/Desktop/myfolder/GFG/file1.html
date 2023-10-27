@@ -1,0 +1,209 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= j, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="file1.css">
+    <script src="https://kit.fontawesome.com/517fa1f138.js" crossorigin="anonymous"></script>
+ </head>
+ <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i> 
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Arpit Singhal</span> from India</h1>
+            </div>
+        </div>
+    </div>
+    <!-----------------------about---------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/cover photo.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore quis, molestiae, voluptas quod eligendi ducimus obcaecati ipsum deserunt repellat eum at tenetur minima corrupti harum aspernatur veniam excepturi ex soluta.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Front-end</li>
+                            <li><span>Data Science</span><br>Data Visualisation<br>Data Analysis</li>
+                            <li><span>Marketing</span><br>Sales and public realtions</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020</span><br>Class 10th from CBSE with 93.4%</li>
+                            <li><span>2022</span><br>Class 12th from CBSE with 77%</li>
+                            <li><span>2022-2026</span><br>Undergrad in Computer Science Engineering from SRM University with a cgpa of 9.05</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023</span><br>Did an internship in sales at Internshala</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-------------services----------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-globe"></i>
+                <h2>Web Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, ullam dolore commodi quasi a doloremque officia sequi provident ab aliquid assumenda consequuntur placeat temporibus facilis porro error ex ipsam illo.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-chart-line"></i>
+                <h2>Data Visualization</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, ullam dolore commodi quasi a doloremque officia sequi provident ab aliquid assumenda consequuntur placeat temporibus facilis porro error ex ipsam illo.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-chart-simple"></i>
+                <h2>Data Analysis</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, ullam dolore commodi quasi a doloremque officia sequi provident ab aliquid assumenda consequuntur placeat temporibus facilis porro error ex ipsam illo.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>     
+<!---------------------portfolio-------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.png">
+                <div class="layered">
+                    <h3>Tip Calculator</h3>
+                    <p>A GUI drop box to calculate tip for the services provided by restraunts,parlors,etc.</p>
+                    <a href="https://github.com/ARPIT22102003/TIP-CALCULATOR"><i class="fa-sharp fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.png">
+                <div class="layered">
+                    <h3>Sales and Advertisment Relation</h3>
+                    <p>A Data Science project on Visualisation of sales and advertisment of the company using numpy,pandas,sklearn,etc.</p>
+                    <a href="https://colab.research.google.com/drive/1FQ4O_-huYV7I5DlOlewXtZ57iXTEIDuj"><i class="fa-sharp fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.png">
+                <div class="layered">
+                    <h3>Hostel Management Site</h3>
+                    <p>A website for the Hostel Booking for new as well old student.The site contain login, signup, home,etc.</p>
+                    <a href="#https://github.com/ARPIT22102003/hostel_booking"><i class="fa-sharp fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/ARPIT22102003" class="btn">See more</a>
+    </div>
+</div>
+<!-------contact----------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-envelope"></i> arpitsinghal00001@gmail.com</p>
+                <p> <i class="fa-solid fa-phone"></i> 9960469145</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/arpit_4002/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/NmArpit"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/arpit-singhal-993a79241/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/ARPITSINGHAL_InternshalaResume (2).pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © ARPIT SINGHAL.</p>
+    </div>
+</div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+         function openmenu(){
+            sidemenu.style.right = "0";
+         }
+         function closemenu(){
+            sidemenu.style.right = "-200px";
+         }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwPEwXF9zzC7qgGv3a4xGXQte2c-apK31GbpxVyoShAoq2dY9nrO8ynNGtFWsPv28vGaQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      As you can se
+ </body>
+ </html>
